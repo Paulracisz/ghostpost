@@ -1,0 +1,25 @@
+
+<a href="newpost/"> add a roast or boast! </a>
+<br/>
+<a href="boasts/"> View Just Boasts </a>
+<br />
+<a href="roasts/"> View Just Roasts </a>
+
+<br/>
+{%for post in posts%}
+    {{post.description}}
+    <br/>
+    Upvote Or Downvote
+    <br/>
+    <a href="upvote/{{post.id}}">Upvote </a>
+    <br/>
+    <a href="downvote/{{post.id}}"> DownVote </a>
+    {{post.votetotal}}
+    {%if post.roast_or_boast%}
+    <p> Roast </p>
+
+    {%else%}
+    <p> Boast </p>
+    {% endif %}
+    <br/>
+    {%endfor%}

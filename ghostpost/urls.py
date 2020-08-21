@@ -16,11 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from post.views import index, newpost, upvote, downvote
+from post.views import index, newpost, upvote, downvote, boasts, roasts, votefilter
 
 urlpatterns = [
     path('', index, name='homepage'),
     path('newpost/', newpost),
+    path('boasts/', boasts),
+    path('roasts/', roasts),
+    path('votefilter/', votefilter),
     path('upvote/<int:id>', upvote),
     path('downvote/<int:id>', downvote),
     path('admin/', admin.site.urls),

@@ -8,4 +8,7 @@ class Post(models.Model):
     up_vote = models.IntegerField(default=0)
     down_vote = models.IntegerField(default=0)
     time_created = models.DateTimeField(default=timezone.now)
+    @property
+    def votetotal(self):
+        return self.up_vote + self.down_vote
 

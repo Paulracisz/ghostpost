@@ -1,6 +1,11 @@
 
 <a href="newpost/"> add a roast or boast! </a>
 <br/>
+<a href="boasts/"> View Just Boasts </a>
+<br />
+<a href="roasts/"> View Just Roasts </a>
+<br/>
+<a href="votefilter/"> Sort By Vote Number </a>
 
 <br/>
 {%for post in posts%}
@@ -9,10 +14,9 @@
     Upvote Or Downvote
     <br/>
     <a href="upvote/{{post.id}}">Upvote </a>
-    {{post.up_vote}}
     <br/>
     <a href="downvote/{{post.id}}"> DownVote </a>
-    {{post.down_vote}}
+    {{post.votetotal}}
     {%if post.roast_or_boast%}
     <p> Roast </p>
 
