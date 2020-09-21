@@ -1,7 +1,5 @@
 # ghostpost
 
-# hierarchicaldata
-
 <h2> What this project is for </h2>
 <p> This application is a Django database, that is similar to Reddit, it utilizes features such as creating new posts, a toggle upvote and downvote system, and a 2 data type system for posts. Users can post a "roast" a post that is mocking a particular thing, or a "boast" a post bragging about a subject.</p>
 
